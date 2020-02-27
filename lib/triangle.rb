@@ -21,12 +21,12 @@ class Triangle
   def kind
     puts "#{@a},#{@b},#{@c}, #{@a == @b && @b == @c}"
     if(@a == @b && @b == @c)
-      :equilateral
+      return :equilateral
     end
     if (@a == @b || @b == @c || @a == @c)
-      :isosceles
+      return :isosceles
     end
-    :scalene
+    return :scalene
   end
  
   class TriangleError < StandardError
