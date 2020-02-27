@@ -21,7 +21,8 @@ class Triangle
     puts "#{@a},#{@b},#{@c}"
     if(@a == @b && @b == @c)
       :equilateral
-    elsif (@a == @b || @b == @c || @a == @c)
+    end
+    if (@a == @b || @b == @c || @a == @c)
       :isosceles
     end
     :scalene
