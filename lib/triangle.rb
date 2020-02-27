@@ -19,7 +19,7 @@ class Triangle
   end
   
   def kind
-    puts "#{@a},#{@b},#{@c}"
+    puts "#{@a},#{@b},#{@c}, #{@a == @b && @b == @c}"
     if(@a == @b && @b == @c)
       :equilateral
     end
