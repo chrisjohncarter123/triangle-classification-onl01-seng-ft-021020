@@ -18,9 +18,10 @@ class Triangle
   end
   
   def kind
+    puts "#{@a},#{@b},#{@c}"
     if(@a == @b && @b == @c)
       :equilateral
-      elsif (@a == @b || @b == @c || @a == @c)
+    elsif (@a == @b || @b == @c || @a == @c)
       :isosceles
     end
     :scalene
