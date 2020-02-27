@@ -16,9 +16,10 @@ class Triangle
     if(a == b && b == c)
       :equilateral
       elsif (a == b || b == c || a == c)
-      :
-      
+      :isosceles
     end
+    
+    :
   end
  
   class TriangleError < StandardError
